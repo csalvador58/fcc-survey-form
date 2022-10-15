@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Yummy Food Survey</h1>
+      <p id="description">Tell us your favorite samples!</p>
+    </header>
+
+    <form action="https://register-demo.freecodecamp.org" id="survey-form" autocomplete="on">
+      <fieldset>
+      <label id="name-label">Name: <br><input id="name" type="text" placeholder="Enter Your Name" required><br><br></label>
+      <label id="email-label">Email: <br><input id="email" type="email" placeholder="Enter Your Email" autocomplete="off" required ><br><br></label>
+
+      <label id="number-label">No. in group<br><input id="number" type="number" min="1" max="10" placeholder="1"></label>
+      </fieldset>
+
+      <fieldset>
+        <select id="dropdown">
+          <option value="">Select your favorite YUMMY Food</option>
+          <option value="1">Raging Beef Tacos</option>
+          <option value="2">Korean Sidekick Shrimp</option>
+          <option value="3">Crispy Ravioli Pasta</option>
+          <option value="4">Jammin Jerk Chicken</option>
+          <option value="5">Spinning Spiral Ramen</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Would you like to be notified for future events?</legend>
+        <label><input id="yes" type="radio" name="notified" value="yes" checked> Yes</label>
+        <label><input id="no" type="radio" name="notified" value="no"> No<br><br></label>
+     
+        <legend>Which cities would you travel to visit our events?</legend>
+        <label><input id="seattle" type="checkbox" name="city" value="Seattle"> Seattle<br></label>
+        <label><input id="bellevue" type="checkbox" name="city" value="Bellevue"> Bellevue<br></label>
+        <label><input id="lynnwood" type="checkbox" name="city" value="Lynnwood"> Lynnwood<br></label>
+        <label><input id="everett" type="checkbox" name="city" value="Everett"> Everett<br></label>
+        <label><input id="tacoma" type="checkbox" name="city" value="Tacoma"> Tacoma<br><br></label>
+      
+        <label>Any comments or suggestions?<textarea name="comments" rows="5" cols="50"></textarea> </label>
+      
+      </fieldset>
+
+
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+
+</html>
